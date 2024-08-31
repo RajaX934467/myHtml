@@ -1,0 +1,307 @@
+
+        *{padding: 0%;
+            margin: 0%;
+            text-decoration: none;
+            /* background-image: url("blackcar.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        */
+        /*  */
+    } 
+        .navbar{
+            background-color: rgb(0, 0, 0);
+            padding-right: 15px;
+            padding-left: 15px;
+            height: 70px;
+
+        }
+        .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-size: 30px;
+            color: aliceblue;
+        }
+        ul{
+            list-style: none;
+
+        }
+        ul li a{
+            margin-left: 15px;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-top: 25px;
+            position: relative;
+        }
+        li a{
+            color: white;
+            margin-right: 50px;
+            font-size: 20px;
+           display: block;
+           text-align: center;
+        }
+        ul li ul.dropdown li{
+            display: block;
+        }
+        ul li ul.dropdown{
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            background: linear-gradient(gray,black);           
+           display: none;
+           
+        }
+        ul li:hover ul.dropdown{
+            display: block;
+            width: 100%;
+            margin-left: 0px;
+        }
+        ul li ul.dropdown li:hover{
+            color: rgb(255, 255, 255);
+            height: 100%;
+            background: linear-gradient(black ,gray);
+            text-align: center;
+            cursor: pointer;
+            padding: 5px;
+        } 
+        ul li:hover{
+            color: rgb(129, 148, 164);text-align: center;
+        }
+        ul li a:hover
+        {
+            color: yellow;
+            font-style:oblique;
+            border: 1px solid white;
+           
+            border-radius: 10px;
+        }
+        button{
+            background-color: rgb(255, 255, 255);
+            margin-left: 10px;
+            color: aliceblue;
+            border-radius: 15px;
+            padding: 10px;
+            width: 100px;
+        }
+        button a{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 15px;
+            padding: 10px;
+        }
+        button a:hover{
+            color: rgb(0, 120, 224);
+        }
+
+    main{
+        
+        background-image: url(./blackcar.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 800px;
+        width: 100%;
+        background-position: center;
+        margin-bottom: 50px;
+        color: white;
+    }
+    #searchcar{
+        width: 600px;
+        height: 40px;
+        border-radius: 10px;
+        background:transparent;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Copperplate Gothic';
+        margin-left: 30%;
+        margin-top: 5%;
+        color: aliceblue;
+    }
+    #searchcar{
+        text-indent: 32px ;
+        
+    }
+    .mgsearch{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: aliceblue;
+    }
+    #sbtn{
+        color: black;
+        font-size: 13px;
+        font-family: 'Copperplate Gothic',bold;
+    }
+    #sbtn:hover{
+        cursor: pointer;
+        background-color: rgb(54, 60, 64);
+        color: aliceblue;
+    }
+    #regform{
+        border: 2px solid white;
+        height: auto;
+        width: 400px;
+        margin-left: 38%;
+        margin-top: 5%;
+        border-radius: 13px;
+        padding-bottom: 40px;
+           
+ }
+    #regform input{
+        height: 30px;
+        width: 300px;
+        margin-top: 30px;
+        margin-left: 50px;
+        background: transparent;
+        color: white;
+        border-radius: 8px;
+       
+    }
+    #regform input::placeholder{
+        color: white;
+        font-size: 12px;
+        font-family: 'Copperplate Gothic';
+        padding-left: 10px;
+    }
+    aside{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    aside h3{
+        margin-top: 15px;
+    }
+    aside #submit{
+        background-color: aliceblue;
+        color: black;
+        border-radius: 10px;
+    }
+    aside #reset{
+        background-color: aliceblue;
+        color: black;
+        border-radius: 10px;
+    }
+    aside #submit:hover{
+        background-color: rgb(85, 96, 105);
+        color: rgb(255, 255, 255);
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    aside #reset:hover{
+        background-color: rgb(85, 96, 105);
+        color: rgb(255, 255, 255);
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: black;
+        
+        
+    }
+
+.cars{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.cars img{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+}
+.cars h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Copperplate Gothic' ;
+    color: white;
+}
+.cars p{
+    color: white;
+    justify-content: center;
+    padding: 10px;
+    line-height: 3rem;
+}
+.mainabout{
+    background-color: black;
+    display: grid;
+}
+.about{
+    height: 600px;
+    width: auto;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+
+.about h3{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 30px;
+    font-family:'Copperplate Gothic' ;
+    color: white;
+    padding-top: 15px;
+}
+.about p{
+    color: white;
+    justify-content: center;
+    padding: 10px;
+    line-height: 3rem;
+}
+.footer{
+    background-color: black;
+    display: grid;
+   height: 50px;
+   padding: 10px;
+    
+}
+footer{
+    display: grid;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid white;
+    text-align: center;
+    
+    
+}
+.footer footer p:hover{
+    cursor: pointer;
+}
+.footer footer ul li .fa:hover{
+    cursor: pointer;
+}
+/* 
+
+footer p{
+    margin-top: 5px;
+}
+footer ul{
+    list-style: none;
+    display: grid;
+}
+footer ul li a:hover{
+    cursor: pointer;
+} */
+
+
+
+
+
+
+    
+   
